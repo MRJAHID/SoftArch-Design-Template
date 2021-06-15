@@ -1,0 +1,27 @@
+{
+  "name": "softarch-tailwindcss.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.2",
+    "tailwindcss": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "tw-build": "npx tailwindcss-cli@latest build ./dist/css/tailwind.css -o ./dist/css/tailwind.css",
+    "sass": "sass --watch ./src/scss/index.scss:./src/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRJAHID/softarch-tailwindcss.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MRJAHID/softarch-tailwindcss.github.io/issues"
+  },
+  "homepage": "https://github.com/MRJAHID/softarch-tailwindcss.github.io#readme"
+}

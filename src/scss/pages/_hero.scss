@@ -1,0 +1,29 @@
+.hero {
+    &__txt {
+        .hero__text-content {
+            width: 85%;
+
+            .bg-shape {
+                -webkit-animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+                animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+            }
+
+            h4 {
+                font-size: $font-xsm;
+                padding-bottom: 2rem;
+                color: $primary-color;
+            }
+            h2 {
+                font-size: 5.2rem;
+                font-weight: 600;
+                padding-bottom: 2.5rem;
+                color: $fifth-color;
+            }
+            p {
+                font-size: $font-xs;
+                padding-bottom: 2rem;
+                color: $fourth-color;
+            }
+        }
+    }
+}
