@@ -20,3 +20,44 @@ a:hover,
 a:visited {
     text-decoration: none;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #25373f;
+}
+p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: $fourth-color;
+}
+
+// Card
+.card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 1.5rem;
+    padding: 35px;
+    min-height: 265px;
+    transition: all 300ms ease-in-out;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px 3px rgb(0, 0, 0, 0.06);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

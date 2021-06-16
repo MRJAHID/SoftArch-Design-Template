@@ -24,3 +24,35 @@
         background-color: #ff7043;
     }
 }
+
+.secondary-btn {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-table;
+    padding: 20px 45px;
+    font-weight: 400;
+    border-radius: 4px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffa203), to(#ff5e29));
+    background-image: linear-gradient(to right, #ffa203, #ff5e29);
+}
+
+.offers .secondary-btn {
+    padding: 12px 25px;
+    border: 1px solid #f68820;
+    color: #262729;
+    background-image: none;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    &:hover {
+        background-image: -webkit-gradient(linear, left top, right top, from(#ffa203), to(#ff5e29));
+        background-image: linear-gradient(to right, #ffa203, #ff5e29);
+        color: #fff;
+    }
+}

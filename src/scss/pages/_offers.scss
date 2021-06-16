@@ -1,0 +1,17 @@
+.offers {
+    @include sectionTitle;
+
+    &_items {
+        padding: 30px;
+        text-align: center;
+        transition: all ease 0.5s;
+        &:hover {
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            background-color: #fff;
+        }
+
+        h4 {
+            font-size: $font-sm;
+        }
+    }
+}

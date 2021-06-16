@@ -3,12 +3,7 @@
         .hero__text-content {
             width: 85%;
 
-            .bg-shape {
-                -webkit-animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
-                animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
-            }
-
-            h4 {
+            span {
                 font-size: $font-xsm;
                 padding-bottom: 2rem;
                 color: $primary-color;
