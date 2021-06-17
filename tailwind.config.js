@@ -5,6 +5,9 @@ module.exports = {
         fontFamily: {
             rubik: ['Rubik', 'sans-serif'],
         },
+        inset: {
+            6.5: '1.65rem',
+        },
         extend: {},
     },
     variants: {

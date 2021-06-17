@@ -29,11 +29,11 @@ $breakpoints-down: (
 @mixin sectionTitle {
     .section_title {
         max-width: 750px;
-        text-align: center;
         margin: 6px auto 50px;
         span {
             font-size: 1.8rem;
             color: $primary-color;
+            position: relative;
         }
         h2 {
             font-size: $font-5xl;
