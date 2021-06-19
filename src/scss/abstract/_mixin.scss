@@ -40,3 +40,7 @@ $breakpoints-down: (
         }
     }
 }
+
+@mixin transition-sm {
+    transition: all 300ms ease-in-out;
+}

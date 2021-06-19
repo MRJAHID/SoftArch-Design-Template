@@ -1,0 +1,75 @@
+.footer {
+    background-image: url('https://wedevs.com/img/blog/blog-header-bg.svg');
+    background-size: contain;
+
+    &__input {
+        height: 45px;
+        width: 100%;
+        border: 1px solid lightblue;
+        border-radius: 50px;
+        font-size: 14px;
+        padding: 0 15px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        width: 30px;
+        height: 30;
+        height: 30px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 50px;
+        right: 10px;
+        top: 8px;
+        .arrow-sm {
+            margin: 0 auto;
+        }
+    }
+    .arrow-sm {
+        width: 13px;
+        height: 13px;
+    }
+    &__box {
+        padding: 0 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul {
+            padding-left: 25px;
+            li {
+                padding: 6px 0;
+                a {
+                    text-transform: capitalize;
+                    align-items: center;
+                    font-size: 13px;
+                    color: $fifth-color;
+                    @include transition-sm;
+                    &:hover {
+                        color: $primary-color;
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+
+    &__social {
+        li {
+            padding: 0 10px;
+            a {
+                .footer__icon {
+                    width: 20px;
+                    height: 20px;
+                    @include transition-sm;
+                    &:hover {
+                        transform: translateY(-5px);
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.contact {
+    @include sectionTitle;
+
+    .section_title {
+        .sub-title {
+            font-size: 1.4rem;
+            color: $primary-color;
+            font-weight: 600;
+            text-transform: capitalize;
+            .dot {
+                background-color: $fourth-color;
+                &:last-child {
+                    top: 1px;
+                }
+            }
+        }
+        .main-title {
+            font-size: 36px;
+            line-height: 34px;
+            color: $third-color;
+        }
+        p {
+            line-height: 2;
+            width: 80%;
+        }
+    }
+    // Right Side
+    &__box {
+        background-color: $secondary-color;
+        padding: 4rem 5rem 1.5rem;
+        border-radius: 15px;
+    }
+    &__box--info-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        background: #414ab5;
+        border-radius: 64%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact__form form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+.contact__form form input,
+.contact__form form textarea {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    padding: 1em;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+}
+.contact__form form input:focus,
+.contact__form form textarea:focus {
+    -moz-box-shadow: 0 0px 2px $primary-color !important;
+    -webkit-box-shadow: 0 0px 2px $primary-color !important;
+    box-shadow: 0 0px 2px $primary-color !important;
+}
+.contact__form form #input-submit {
+    color: white;
+    background: $primary-color;
+    cursor: pointer;
+}
+.contact__form form #input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+.contact__form form textarea {
+    height: 175px;
+}
+
+.contact__form .half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.contact__form .right {
+    width: 50%;
+}
+
+.contact__form .left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .contact__form .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+/* Clearfix */
+.contact__form .cf:before,
+.contact__form .cf:after {
+    content: ' ';
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.contact__form .cf:after {
+    clear: both;
+}
