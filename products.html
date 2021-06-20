@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon" />
+        <!-- AnimateCss -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- TailwindCss -->
+        <link rel="stylesheet" href="./dist/css/tailwind.css" />
+        <!-- Main Css -->
+        <link rel="stylesheet" href="./src/css/index.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Main Js -->
+        <link rel="stylesheet" defer href="./src/js/main.js" />
+        <title>Products | SoftArch</title>
+    </head>
+    <body>
+        <!-- ==================== Start progress-scroll-button ==================== -->
+
+        <!-- Header Section START -->
+        <header class="header">
+            <div class="container px-16 mx-auto">
+                <nav class="flex flex-row items-center justify-between header__nav">
+                    <div class="header__logo">
+                        <img src="./src/img/logo-dark.png" alt="Logo" />
+                    </div>
+
+                    <div class="header__menu">
+                        <nav class="nav_menu">
+                            <label for="drop" class="toggle">Home</label>
+                            <input type="checkbox" id="drop" />
+                            <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-1" class="toggle">Pages</label>
+                                    <a href="#">Pages</a>
+                                    <input type="checkbox" id="drop-1" />
+
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">Themes and stuff</a></li>
+                                        <li><a href="#">Plugins</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-2" class="toggle">Portfolios</label>
+                                    <a href="#">Portfolios</a>
+                                    <input type="checkbox" id="drop-2" />
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">Resources</a></li>
+                                        <li><a href="#">Links</a></li>
+                                        <li>
+                                            <!-- Second Tier Drop Down -->
+                                            <label for="drop-3" class="toggle">Blogs</label>
+                                            <a href="#">Blogs</a>
+                                            <input type="checkbox" id="drop-3" />
+
+                                            <ul class="animate__animated animate__slideInUp">
+                                                <li><a href="#">HTML/CSS</a></li>
+                                                <li><a href="#">jQuery</a></li>
+                                                <li><a href="#">Other</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__btn">
+                        <div class="header__social">
+                            <ul class="inline-flex">
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Section START -->
+
+        <!-- Products Hero Section START -->
+        <section class="relative py-10 hero products">
+            <div class="container px-16 mx-auto">
+                <div class="flex flex-col items-center justify-start hero__banner md:flex-row">
+                    <!-- Background Animation -->
+                    <div id="particle-container">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="w-1/2 hero__txt">
+                        <div class="hero__text-content">
+                            <span class="">All Softwares</span>
+                            <h2 class="text-xl">
+                                Transform Your WordPress Site the Way You Want with a Wide Range of
+                                Solutions
+                            </h2>
+                            <p>
+                                Simple & Affordable Premium WordPress Plugins for You to Fight with
+                                the Big Guys and WIN
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-1/2 hero__img">
+                        <div class="hero__banner-img">
+                            <img
+                                class="animate__animated animate__fadeInUpBig"
+                                src="./src/img/banner/19362653.jpg"
+                                alt="Hero Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Products Hero Section END -->
+
+        <!-- All Products Section START -->
+        <main class="py-20">
+            <div class="container px-16 mx-auto">
+                <div class="flex flex-wrap products">
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/3 p-6">
+                        <div class="bg-white shadow-lg hover:shadow-2xl products__div">
+                            <div class="products__img">
+                                <img
+                                    src="https://i2.wp.com/previews.customer.envatousercontent.com/files/276304418/preview.jpg?ssl=1"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-7 products__info">
+                                <a
+                                    href="#"
+                                    class="block py-4 text-3xl font-medium text-gray-800  products__title"
+                                    >SMS - Stock Management System</a
+                                >
+                                <div class="flex items-center justify-between pb-4">
+                                    <div class="products__price">
+                                        <span class="block text-2xl font-medium">$69</span>
+                                    </div>
+                                    <div class="flex products__star">
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                        <i
+                                            data-feather="star"
+                                            class="pr-1 text-blue-500"
+                                            width="18"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <p class="text-justify text-gray-700">
+                                    Stock management system ensures efficient operation, modern
+                                    invoicing system, revenue management, track inventory and helps
+                                    you to promote your business. The Stock software also as Stock
+                                    billing software.
+                                </p>
+                            </div>
+                            <div class="flex justify-between products__btn">
+                                <div class="w-1/2 p-6 text-center products__btn-left">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >LIVE DEMO</a
+                                    >
+                                </div>
+                                <div class="w-1/2 p-6 text-center products__btn-right">
+                                    <a
+                                        href="#"
+                                        class="text-2xl font-medium text-white uppercase"
+                                        target="_blank"
+                                        >BUY NOW</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- All Products Section END -->
+
+        <!-- Footer Section START -->
+        <footer class="py-6 footer">
+            <div class="container px-16 mx-auto footer__container">
+                <div class="flex justify-center footer__wrapper">
+                    <div class="w-1/4">
+                        <img
+                            src="./src/img/logo-dark.png"
+                            class="py-8 footer__logo"
+                            alt="Footer Logo"
+                        />
+                        <p class="py-4 footer__para">
+                            There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered.
+                        </p>
+                    </div>
+                    <div class="w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                Company
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                SUPPORT
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                PRODUCTS
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full footer__copyright">
+                    <div class="flex items-center justify-between pt-8 pb-6 text-center">
+                        <div class="w-1/2 text-start">
+                            <p class="text-left" style="margin-bottom: 0">
+                                © 2021 SoftArch. All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="w-1/2">
+                            <ul class="flex justify-end footer__social">
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section END -->
+
+        <!-- **************** SCRIPTS ******************** -->
+        <!-- Feather Icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
