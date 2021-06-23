@@ -60,6 +60,9 @@ p {
     &:hover {
         transform: scale(1.03);
     }
+    @include breakpoint-down(small) {
+        min-height: 210px;
+    }
 }
 
 //
