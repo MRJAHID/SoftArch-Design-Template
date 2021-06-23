@@ -2,6 +2,15 @@
     @include sectionTitle;
     a.button {
         transform: translate(-25px, -44px);
+        @include breakpoint-down(small) {
+            transform: translate(-7px, -35px);
+        }
+    }
+
+    & .container {
+        @include breakpoint-down(small) {
+            background-color: #f5f7f9;
+        }
     }
 
     .section_title {
@@ -20,6 +29,10 @@
             font-weight: normal;
             color: $fourth-color;
             margin-bottom: 30px;
+            @include breakpoint-down(small) {
+                width: 95%;
+                font-size: 1.4rem;
+            }
         }
         p {
             line-height: 2;
@@ -44,6 +57,9 @@
         &:hover {
             box-shadow: 0 40px 70px 0 rgba(0, 0, 0, 0.1);
         }
+        @include breakpoint-down(small) {
+            width: 320px;
+        }
 
         a {
             color: $primary-color;
@@ -61,6 +77,9 @@
 
         &--top {
             transform: translateY(-56px);
+            @include breakpoint-down(small) {
+                transform: translateY(0px);
+            }
         }
     }
 }

@@ -34,9 +34,16 @@ $breakpoints-down: (
             font-size: 1.8rem;
             color: $primary-color;
             position: relative;
+            @include breakpoint-down(small) {
+                font-size: 1.6rem;
+            }
         }
         h2 {
             font-size: $font-5xl;
+            @include breakpoint-down(small) {
+                font-size: $font-lg;
+                font-weight: 500;
+            }
         }
     }
 }

@@ -11,8 +11,8 @@
 -----------------------------------------------------------------------------------*/
 // Abstrack
 @import './abstract/variables';
-@import './abstract/base';
 @import './abstract/mixin';
+@import './abstract/base';
 @import './abstract/animation';
 
 // Components
@@ -29,3 +29,4 @@
 @import './pages/contact';
 @import './pages/project';
 @import './pages/footer';
+@import './pages/products';
