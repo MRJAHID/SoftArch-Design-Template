@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon" />
+        <!-- AnimateCss -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- TailwindCss -->
+        <link rel="stylesheet" href="./dist/css/tailwind.css" />
+        <!-- Main Css -->
+        <link rel="stylesheet" href="./src/css/index.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Main Js -->
+        <link rel="stylesheet" defer href="./src/js/main.js" />
+        <title>SoftArch | About Us</title>
+    </head>
+    <body>
+        <!-- Header Section START -->
+        <header class="header">
+            <div class="container px-6 mx-auto md:px-16">
+                <nav class="flex flex-row items-center justify-between header__nav">
+                    <div class="header__logo">
+                        <img src="./src/img/logo-dark.png" alt="Logo" />
+                    </div>
+
+                    <div class="hidden header__menu md:inline-block">
+                        <nav class="nav_menu">
+                            <label for="drop" class="toggle">Home</label>
+                            <input type="checkbox" id="drop" />
+                            <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-1" class="toggle">Pages</label>
+                                    <a href="#">Pages</a>
+                                    <input type="checkbox" id="drop-1" />
+
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">Themes and stuff</a></li>
+                                        <li><a href="#">Plugins</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-2" class="toggle">Portfolios</label>
+                                    <a href="#">Portfolios</a>
+                                    <input type="checkbox" id="drop-2" />
+                                    <ul class="animate__animated animate__slideInUp">
+                                        <li><a href="#">Resources</a></li>
+                                        <li><a href="#">Links</a></li>
+                                        <li>
+                                            <!-- Second Tier Drop Down -->
+                                            <label for="drop-3" class="toggle">Blogs</label>
+                                            <a href="#">Blogs</a>
+                                            <input type="checkbox" id="drop-3" />
+
+                                            <ul class="animate__animated animate__slideInUp">
+                                                <li><a href="#">HTML/CSS</a></li>
+                                                <li><a href="#">jQuery</a></li>
+                                                <li><a href="#">Other</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__btn">
+                        <!-- Mobile Menu start-->
+                        <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                            <a href="#" class=""><i data-feather="menu"></i></a>
+                        </div>
+                        <!-- Mobile Menu start-->
+
+                        <div class="hidden header__social md:inline-block">
+                            <ul class="inline-flex">
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="facebook"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="instagram"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="twitter"></i></a>
+                                </li>
+                                <li class="px-5">
+                                    <a href="#"><i data-feather="youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Menu -->
+            <nav class="mobile__menu mobile__menu-left">
+                <div class="mobile__menu--head">
+                    <a href="#">
+                        <span>&nbsp;</span>
+                        <span
+                            class="close-menu"
+                            style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                            ><i data-feather="x" class="arrow-md"></i
+                        ></span>
+                    </a>
+                </div>
+                <div class="mobile__menu--main">
+                    <a href="#">
+                        <span>Home</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+                    </a>
+                    <a href="#"
+                        ><span>About </span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Products</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Services</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Clients</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Contact</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                </div>
+            </nav>
+            <div class="mobile__menu-overlay"></div>
+        </header>
+        <!-- Header Section START -->
+
+        <!-- Hero Section START -->
+        <section class="relative pt-20 pb-10 md:pt-28 aboutus">
+            <div class="container px-6 mx-auto md:px-16">
+                <div class="flex flex-col items-center justify-start hero__banner md:flex-row">
+                    <!-- Background Animation -->
+                    <div id="particle-container">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="w-full md:w-1/2 aboutus__txt">
+                        <div class="aboutus__text-content">
+                            <span class="main_heading">About Us</span>
+                            <h2 class="sub_heading">
+                                Our focus is always on finding the best people to work with. Our bar
+                                is high, but you look ready to take on the challenge.
+                            </h2>
+
+                            <div class="flex aboutus__btn">
+                                <a href="#" class="mr-12 button btn-secondary">Watch Video</a>
+                                <a href="#" class="button btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 aboutus__img">
+                        <div class="hero__banner-img">
+                            <img
+                                class="animate__animated animate__fadeInUpBig"
+                                src="./src/img/4380.jpg"
+                                alt="Hero Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section END -->
+
+        <!-- About Us Section START -->
+        <section class="relative pb-10 pt-36 about">
+            <div class="container px-6 mx-auto md:px-16">
+                <div class="flex flex-col md:flex-row about__content">
+                    <!-- Left Side -->
+                    <div class="w-full pr-0 md:pr-5 md:w-1/2">
+                        <div class="pt-16 text-left section_title">
+                            <span class="ml-12 uppercase sub-title">
+                                <span class="dot"></span><span class="dot"></span
+                                ><span class="dot"></span>
+                                About Us
+                            </span>
+                            <h2 class="pl-4 my-8 font-normal main-title">
+                                Our 20 years working experience make a different business agency
+                                services.
+                            </h2>
+                            <p class="pl-4 mb-10">
+                                We are AVO. We create award-winning websites, remarkable brands and
+                                cutting-edge apps.Nullam imperdiet, sem at fringilla lobortis, sem
+                                nibh fringilla nibh, id gravida mi purus sit amet erat. Ut dictum
+                                nisi masvitp. Nulla metus metus ullamcorper vel tincidunt sed
+                                euismod nibh volutpat velit class aptent taciti sociosqu ad litora.
+                            </p>
+
+                            <a href="services-details.html" class="about__btn button btn-secondary">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                    <div id="particle-container">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="relative w-full md:w-1/2">
+                        <div class="about__img">
+                            <img
+                                src="./src/img/banner/xps-8pb7Hq539Zw-unsplash.jpg"
+                                class="rounded-3xl"
+                                alt="About Us Image"
+                            />
+                        </div>
+                        <div
+                            class="absolute w-11/12 mx-auto bg-white  md:w-10/12 h-100 md:h-60 about__skill rounded-3xl"
+                        >
+                            <div
+                                class="flex flex-col items-center justify-between w-full h-full  md:flex-row about__skill--context-center"
+                            >
+                                <div
+                                    class="flex items-center justify-around w-full mb-4  md:mb-0 md:w-1/2 about__skill-items"
+                                >
+                                    <div class="about__canvas">
+                                        <span
+                                            class="flex items-center justify-center w-full h-full text-3xl font-medium text-gray-800 "
+                                            >90%</span
+                                        >
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-xl font-normal text-gray-700">Project</h2>
+                                        <h3 class="pt-3 text-3xl font-normal text-gray-800">
+                                            Launched
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-center justify-around w-full  md:w-1/2 about__skill-items"
+                                >
+                                    <div class="about__canvas">
+                                        <span
+                                            class="flex items-center justify-center w-full h-full text-3xl font-medium text-gray-800 "
+                                            >90%</span
+                                        >
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h2 class="text-xl font-normal text-gray-700">Happy</h2>
+                                        <h3 class="pt-3 text-3xl font-normal text-gray-800">
+                                            Clients
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section END -->
+
+        <!-- Our Notation START -->
+        <section class="relative pt-56 pb-20 notation">
+            <div class="container px-6 mx-auto md:px-16">
+                <div class="flex flex-col md:flex-row notation__content">
+                    <div class="w-full md:w-1/3">
+                        <div class="pt-12 pr-10 text-left section_title">
+                            <span class="ml-12 uppercase sub-title">
+                                <span class="dot"></span><span class="dot"></span
+                                ><span class="dot"></span>
+                                Our notion
+                            </span>
+                            <h2 class="pl-4 my-8 font-normal main-title">
+                                An Exceptionally unique experience Tailored to you
+                            </h2>
+                            <p class="pl-4 mb-10">
+                                In a professional context it often happens that private or corporate
+                                clients order a publication news while still not being ready.
+                            </p>
+
+                            <a href="services-details.html" class="about__btn button btn-secondary">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3">
+                        <img src="./src/img/content-1-l5-img.png" alt="" />
+                    </div>
+                    <div class="w-full md:w-1/3">
+                        <div class="flex flex-col pl-8">
+                            <div style="margin-bottom: 4px" class="pt-4 text-left section_title">
+                                <span
+                                    style="
+                                        color: #ff5722;
+                                        font-weight: 500;
+                                        margin-bottom: 25px;
+                                        display: inline-block;
+                                    "
+                                    class="ml-12 uppercase sub-title"
+                                >
+                                    <span class="dot"></span><span class="dot"></span
+                                    ><span class="dot"></span>
+                                    Our Customer
+                                </span>
+                                <p class="pl-4 mb-10">
+                                    Business advisory service advises current and future businesses
+                                    prospects of a client, with the aim of
+                                </p>
+                            </div>
+                            <div style="margin-bottom: 4px" class="pt-4 text-left section_title">
+                                <span
+                                    style="
+                                        color: #ff5722;
+                                        font-weight: 500;
+                                        margin-bottom: 25px;
+                                        display: inline-block;
+                                    "
+                                    class="ml-12 uppercase sub-title"
+                                >
+                                    <span class="dot"></span><span class="dot"></span
+                                    ><span class="dot"></span>
+                                    Our Product
+                                </span>
+                                <p class="pl-4 mb-10">
+                                    Business advisory service advises current and future businesses
+                                    prospects of a client, with the aim of
+                                </p>
+                            </div>
+                            <div style="margin-bottom: 4px" class="pt-4 text-left section_title">
+                                <span
+                                    style="
+                                        color: #ff5722;
+                                        font-weight: 500;
+                                        margin-bottom: 25px;
+                                        display: inline-block;
+                                    "
+                                    class="ml-12 uppercase sub-title"
+                                >
+                                    <span class="dot"></span><span class="dot"></span
+                                    ><span class="dot"></span>
+                                    Our Services
+                                </span>
+                                <p class="pl-4 mb-10">
+                                    Business advisory service advises current and future businesses
+                                    prospects of a client, with the aim of
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Notation END -->
+
+        <!-- Footer Section START -->
+        <footer class="py-6 footer">
+            <div class="container px-6 mx-auto md:px-16 footer__container">
+                <div class="flex flex-wrap justify-center footer__wrapper">
+                    <div class="w-1/2 md:w-1/4">
+                        <img
+                            src="./src/img/logo-dark.png"
+                            class="py-8 footer__logo"
+                            alt="Footer Logo"
+                        />
+                        <p class="py-4 footer__para">
+                            There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered.
+                        </p>
+                    </div>
+                    <div class="w-1/2 pt-6 md:pt-0 md:w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                Company
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex justify-start w-1/2 md:justify-center md:w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                SUPPORT
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/4">
+                        <div class="footer__box">
+                            <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
+                                PRODUCTS
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex"
+                                        ><i data-feather="arrow-right" class="pr-2 arrow-sm"></i
+                                        >Partners</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full footer__copyright">
+                    <div
+                        class="flex flex-col items-center pt-8 pb-6 text-center  md:flex-row md:justify-between"
+                    >
+                        <div class="w-full md:w-1/2 text-start">
+                            <p
+                                class="pb-5 text-center md:pb-0 md:text-left"
+                                style="margin-bottom: 0"
+                            >
+                                © 2021 SoftArch. All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <ul class="flex justify-center md:justify-end footer__social">
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="footer__icon" data-feather="youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section END -->
+
+        <!-- **************** SCRIPTS ******************** -->
+        <!-- Feather Icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>

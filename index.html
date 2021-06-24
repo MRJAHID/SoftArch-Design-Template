@@ -74,7 +74,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="#">Contacts</a></li>
                             </ul>
                         </nav>
@@ -82,8 +82,8 @@
 
                     <div class="header__btn">
                         <!-- Mobile Menu start-->
-                        <div class="header__mobilemenu-btn md:hidden">
-                            <a href="#"><i data-feather="menu"></i></a>
+                        <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                            <a href="#" class=""><i data-feather="menu"></i></a>
                         </div>
                         <!-- Mobile Menu start-->
 
@@ -106,6 +106,46 @@
                     </div>
                 </nav>
             </div>
+            <!-- Mobile Menu -->
+            <nav class="mobile__menu mobile__menu-left">
+                <div class="mobile__menu--head">
+                    <a href="#">
+                        <span>&nbsp;</span>
+                        <span
+                            class="close-menu"
+                            style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                            ><i data-feather="x" class="arrow-md"></i
+                        ></span>
+                    </a>
+                </div>
+                <div class="mobile__menu--main">
+                    <a href="#">
+                        <span>Home</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+                    </a>
+                    <a href="#"
+                        ><span>About </span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Products</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Services</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Clients</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Contact</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                </div>
+            </nav>
+            <div class="mobile__menu-overlay"></div>
         </header>
         <!-- Header Section START -->
 
@@ -899,9 +939,9 @@
 
         <!-- Footer Section START -->
         <footer class="py-6 footer">
-            <div class="container px-16 mx-auto footer__container">
-                <div class="flex justify-center footer__wrapper">
-                    <div class="w-1/4">
+            <div class="container px-6 mx-auto md:px-16 footer__container">
+                <div class="flex flex-wrap justify-center footer__wrapper">
+                    <div class="w-1/2 md:w-1/4">
                         <img
                             src="./src/img/logo-dark.png"
                             class="py-8 footer__logo"
@@ -912,7 +952,7 @@
                             majority have suffered.
                         </p>
                     </div>
-                    <div class="w-1/4">
+                    <div class="w-1/2 pt-6 md:pt-0 md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 Company
@@ -951,7 +991,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/4">
+                    <div class="flex justify-start w-1/2 md:justify-center md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 SUPPORT
@@ -990,7 +1030,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/4">
+                    <div class="w-1/2 md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 PRODUCTS
@@ -1031,14 +1071,19 @@
                     </div>
                 </div>
                 <div class="w-full footer__copyright">
-                    <div class="flex items-center justify-between pt-8 pb-6 text-center">
-                        <div class="w-1/2 text-start">
-                            <p class="text-left" style="margin-bottom: 0">
+                    <div
+                        class="flex flex-col items-center pt-8 pb-6 text-center  md:flex-row md:justify-between"
+                    >
+                        <div class="w-full md:w-1/2 text-start">
+                            <p
+                                class="pb-5 text-center md:pb-0 md:text-left"
+                                style="margin-bottom: 0"
+                            >
                                 © 2021 SoftArch. All Rights Reserved.
                             </p>
                         </div>
-                        <div class="w-1/2">
-                            <ul class="flex justify-end footer__social">
+                        <div class="w-full md:w-1/2">
+                            <ul class="flex justify-center md:justify-end footer__social">
                                 <li>
                                     <a href="#">
                                         <i class="footer__icon" data-feather="facebook"></i>

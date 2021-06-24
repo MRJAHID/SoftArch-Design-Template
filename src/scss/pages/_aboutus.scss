@@ -1,0 +1,50 @@
+.aboutus {
+    .main_heading {
+        font-size: $font-xsm;
+        padding-bottom: 2rem;
+        color: $primary-color;
+        display: inline-block;
+        @include breakpoint-down(small) {
+            padding-bottom: 1rem;
+            display: inline-block;
+        }
+    }
+    .sub_heading {
+        font-size: 2rem;
+        font-weight: 500;
+        padding-bottom: 2.5rem;
+        color: $fifth-color;
+
+        @include breakpoint-down(small) {
+            font-size: 2rem;
+            font-weight: 500;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.notation {
+    @include sectionTitle;
+    .section_title {
+        .sub-title {
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            color: $third-color;
+            .dot {
+                background-color: $primary-color;
+                &:last-child {
+                    top: 3px;
+                }
+            }
+        }
+        .main-title {
+            font-size: 32px;
+            line-height: 40px;
+            color: $fifth-color;
+            font-weight: 500;
+            @include breakpoint-down(small) {
+                font-size: 22px;
+            }
+        }
+    }
+}

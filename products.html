@@ -21,20 +21,19 @@
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <!-- Main Js -->
-        <link rel="stylesheet" defer href="./src/js/main.js" />
+
         <title>Products | SoftArch</title>
     </head>
     <body>
         <!-- Header Section START -->
         <header class="header">
-            <div class="container px-16 mx-auto">
+            <div class="container px-6 mx-auto md:px-16">
                 <nav class="flex flex-row items-center justify-between header__nav">
                     <div class="header__logo">
                         <img src="./src/img/logo-dark.png" alt="Logo" />
                     </div>
 
-                    <div class="header__menu">
+                    <div class="hidden header__menu md:inline-block">
                         <nav class="nav_menu">
                             <label for="drop" class="toggle">Home</label>
                             <input type="checkbox" id="drop" />
@@ -74,14 +73,20 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="#">Contacts</a></li>
                             </ul>
                         </nav>
                     </div>
 
                     <div class="header__btn">
-                        <div class="header__social">
+                        <!-- Mobile Menu start-->
+                        <div class="header__mobilemenu-btn md:hidden toggle-menu">
+                            <a href="#" class=""><i data-feather="menu"></i></a>
+                        </div>
+                        <!-- Mobile Menu start-->
+
+                        <div class="hidden header__social md:inline-block">
                             <ul class="inline-flex">
                                 <li class="px-5">
                                     <a href="#"><i data-feather="facebook"></i></a>
@@ -100,12 +105,52 @@
                     </div>
                 </nav>
             </div>
+            <!-- Mobile Menu -->
+            <nav class="mobile__menu mobile__menu-left">
+                <div class="mobile__menu--head">
+                    <a href="#">
+                        <span>&nbsp;</span>
+                        <span
+                            class="close-menu"
+                            style="border-left: 1px solid #d1d8d8; padding-left: 12px"
+                            ><i data-feather="x" class="arrow-md"></i
+                        ></span>
+                    </a>
+                </div>
+                <div class="mobile__menu--main">
+                    <a href="#">
+                        <span>Home</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span>
+                    </a>
+                    <a href="#"
+                        ><span>About </span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Products</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Services</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Clients</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                    <a href="#"
+                        ><span>Contact</span>
+                        <span><i data-feather="arrow-right" class="arrow-md"></i></span
+                    ></a>
+                </div>
+            </nav>
+            <div class="mobile__menu-overlay"></div>
         </header>
-        <!-- Header Section START -->
+        <!-- Header  Section START -->
 
         <!-- Products Hero Section START -->
         <section class="relative py-10 hero products">
-            <div class="container px-16 mx-auto">
+            <div class="container px-6 mx-auto md:px-16">
                 <div class="flex flex-col items-center justify-start hero__banner md:flex-row">
                     <!-- Background Animation -->
                     <div id="particle-container">
@@ -129,7 +174,7 @@
                         <div class="particle"></div>
                         <div class="particle"></div>
                     </div>
-                    <div class="w-1/2 hero__txt">
+                    <div class="w-full md:w-1/2 hero__txt">
                         <div class="hero__text-content">
                             <span class="">All Softwares</span>
                             <h2 class="text-xl">
@@ -142,7 +187,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-1/2 hero__img">
+                    <div class="w-full md:w-1/2 hero__img">
                         <div class="hero__banner-img">
                             <img
                                 class="animate__animated animate__fadeInUpBig"
@@ -158,9 +203,9 @@
 
         <!-- All Products Section START -->
         <main class="py-20">
-            <div class="container px-16 mx-auto">
+            <div class="container px-6 mx-auto md:px-16">
                 <div class="flex flex-wrap products">
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -234,7 +279,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -308,7 +353,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -382,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -456,7 +501,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -530,7 +575,7 @@
                         </div>
                     </div>
 
-                    <div class="w-1/3 p-6">
+                    <div class="w-full p-6 md:w-1/3">
                         <div class="bg-white shadow-lg hover:shadow-2xl products__div">
                             <div class="products__img">
                                 <img
@@ -610,9 +655,9 @@
 
         <!-- Footer Section START -->
         <footer class="py-6 footer">
-            <div class="container px-16 mx-auto footer__container">
-                <div class="flex justify-center footer__wrapper">
-                    <div class="w-1/4">
+            <div class="container px-6 mx-auto md:px-16 footer__container">
+                <div class="flex flex-wrap justify-center footer__wrapper">
+                    <div class="w-1/2 md:w-1/4">
                         <img
                             src="./src/img/logo-dark.png"
                             class="py-8 footer__logo"
@@ -623,7 +668,7 @@
                             majority have suffered.
                         </p>
                     </div>
-                    <div class="w-1/4">
+                    <div class="w-1/2 pt-6 md:pt-0 md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 Company
@@ -662,7 +707,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/4">
+                    <div class="flex justify-start w-1/2 md:justify-center md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 SUPPORT
@@ -701,7 +746,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="w-1/4">
+                    <div class="w-1/2 md:w-1/4">
                         <div class="footer__box">
                             <h4 class="pb-2 text-2xl font-medium text-gray-800 uppercase">
                                 PRODUCTS
@@ -742,14 +787,19 @@
                     </div>
                 </div>
                 <div class="w-full footer__copyright">
-                    <div class="flex items-center justify-between pt-8 pb-6 text-center">
-                        <div class="w-1/2 text-start">
-                            <p class="text-left" style="margin-bottom: 0">
+                    <div
+                        class="flex flex-col items-center pt-8 pb-6 text-center  md:flex-row md:justify-between"
+                    >
+                        <div class="w-full md:w-1/2 text-start">
+                            <p
+                                class="pb-5 text-center md:pb-0 md:text-left"
+                                style="margin-bottom: 0"
+                            >
                                 © 2021 SoftArch. All Rights Reserved.
                             </p>
                         </div>
-                        <div class="w-1/2">
-                            <ul class="flex justify-end footer__social">
+                        <div class="w-full md:w-1/2">
+                            <ul class="flex justify-center md:justify-end footer__social">
                                 <li>
                                     <a href="#">
                                         <i class="footer__icon" data-feather="facebook"></i>
@@ -784,5 +834,7 @@
         <script>
             feather.replace();
         </script>
+        <!-- Main Js -->
+        <script src="./src/js/main.js"></script>
     </body>
 </html>
