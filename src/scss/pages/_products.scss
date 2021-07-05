@@ -1,22 +1,3 @@
-.products {
-    &__div {
-        @include transition-sm;
-        &:hover {
-            transform: translateY(-10px);
-        }
-    }
-    &__btn-left {
-        background: $secondary-color;
-    }
-    &__btn-right {
-        background: #1a60b6;
-    }
-    &__price {
-        span {
-            color: $secondary-color;
-        }
-    }
-}
 .hero.products {
     .hero__text-content {
         span {
