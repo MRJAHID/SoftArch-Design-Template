@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "tw-build": "npx tailwindcss-cli@latest build ./dist/css/tailwind.css -o ./dist/css/tailwind.css",
-    "sass": "sass --watch ./src/scss/index.scss:./src/css/index.css"
+    "sass": "sass --watch ./src/scss/index.scss:./src/css/index.css --style compressed"
   },
   "repository": {
     "type": "git",
