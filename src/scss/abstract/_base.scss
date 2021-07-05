@@ -126,7 +126,7 @@ ul.pagination {
 
 @media (max-width: 768px) {
     ul.pagination {
-        padding: 1px 10px;
+        padding: 1px 20px;
     }
 }
 
@@ -155,7 +155,7 @@ ul.pagination li a {
     display: block;
     text-decoration: none;
     color: $primary-color;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 50%;
     font-size: 15px;
 }
@@ -168,26 +168,24 @@ ul.pagination li.pageNumber.active a {
 
 ul.pagination li:first-child {
     margin-right: 30px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
 }
 @media (max-width: 768px) {
     ul.pagination li:first-child {
         margin-right: 10px;
-        font-weight: 700;
         font-size: 15px;
     }
 }
 ul.pagination li:last-child {
     margin-left: 30px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
 }
 
 @media (max-width: 768px) {
     ul.pagination li:last-child {
         margin-left: 10px;
-        font-weight: 700;
         font-size: 15px;
     }
 }
