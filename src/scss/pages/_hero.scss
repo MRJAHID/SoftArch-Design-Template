@@ -1,7 +1,6 @@
 .hero {
     &__txt {
         .hero__text-content {
-            width: 85%;
             @include breakpoint-down(small) {
                 width: 100%;
             }
@@ -16,7 +15,7 @@
                 }
             }
             h2 {
-                font-size: 5.2rem;
+                font-size: 5rem;
                 font-weight: 600;
                 padding-bottom: 2.5rem;
                 color: $fifth-color;
