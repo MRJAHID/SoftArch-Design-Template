@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://forkify-tomer-almog.netlify.app/">
-    <img src="https://uploads-ssl.webflow.com/628b94a40020dd0f27ff31d5/628c18ec5934123e29f96609_Screenshot_1.jpg" alt="Project Name">
+  <a href="https://mrjahid.github.io/softarch-tailwindcss/">
+    <img src="https://i.ibb.co/s6fp4rp/Screenshot-from-2023-04-04-15-05-50.png" alt="Project Name">
   </a>
-  <h3 align="center">Forkify Recipie App With JS</h3>
+  <h3 align="center">SoftArch Design Template</h3>
 
   <p align="center">
-   Forkify is a vanilla JavaScript application  <br>
+   SoftArch – Software Agency Multipage Template is a clean and professional saas template, <br>
     <br>
     </p>
 </p>
@@ -16,8 +16,6 @@
 ## Table of contents
 - [About the Website](#about-the-website)
 - [Technical](#technical)
-- [To Do List](#to-do-list)
-- [Licence](#license)
 - [Versions](#versions)
 - [Contact Information](#contact-information)
 
@@ -25,13 +23,12 @@
 
 ### About the website
 
- Forkify is a vanilla JavaScript application that interacts with the Forkify API to fetch and display recipe food data. The user can search for a specific recipe and save it to a favourite list via local storage. The user can easily increase or decrease servings as per his need and can view detailed directions. You can add your own recipe to the list, it will be automatically added to your bookmarks and can be found with the search functionality.
+SoftArch – Software Agency Multipage Template is a clean and professional saas template, perfect for software showcaser, saas startup and Software & saas sites. Built on the Advanced TailwindCSS framework with HTML5 / CSS3. It is fit great on all devices.
 
 #### Hosted?
 
 Yes! This template is hosted on live.
-
-Link One : https://forkify-tomer-almog.netlify.app/  <br>
+https://mrjahid.github.io/softarch-tailwindcss/  <br>
 
 
 ### Technical
@@ -40,6 +37,8 @@ This project uses:
   - Html
   - Css
   - Javascript
+  - SASS
+  - TailwindCSS
 
 #### Running the project
 
@@ -49,8 +48,12 @@ You can:
     
 ## Screenshots
 
-![App Screenshot](https://uploads-ssl.webflow.com/628b94a40020dd0f27ff31d5/628c18ec5934123e29f96609_Screenshot_1.jpg)
-![App Screenshot](https://uploads-ssl.webflow.com/628b94a40020dd0f27ff31d5/62b737150c4d68f517c3a172_forkify-tomer-almog.netlify.app_.jpg)
+![App Screenshot](https://i.ibb.co/s6fp4rp/Screenshot-from-2023-04-04-15-05-50.png)
+![App Screenshot](https://i.ibb.co/nsMBzyZ/Screenshot-from-2023-04-04-15-06-06.png)
+![App Screenshot](https://i.ibb.co/ySZqsNX/Screenshot-from-2023-04-04-15-06-11.png)
+![App Screenshot](https://i.ibb.co/Rpj7rMS/Screenshot-from-2023-04-04-15-06-24.png)
+
+
 
 
 
